@@ -1,105 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Filmes Preferidos</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<!--  -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Barion</title>
+    <!-- Fontes modernas para dar aquele ar de "Netflix do Multiverso" -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-		<div id="h1">
-			<h1>
-				Meus filmes preferidos de <span><b>TODOS</b></span> os tempos
-			</h1>
-		</div>
+	<svg width="0" height="0" style="position: absolute; pointer-events: none;">
+        <defs>
+            <filter id="ethereal-filter">
+                <feTurbulence result="undulation" numOctaves="2" baseFrequency="0.0008,0.003" seed="0" type="turbulence" />
+                <feColorMatrix id="hue-anim" in="undulation" type="hueRotate" values="0" />
+                <feColorMatrix in="dist" result="circulation" type="matrix" values="4 0 0 0 1  4 0 0 0 1  4 0 0 0 1  1 0 0 0 0" />
+                <feDisplacementMap in="SourceGraphic" in2="circulation" scale="60" result="dist" />
+                <feDisplacementMap in="dist" in2="undulation" scale="60" result="output" />
+            </filter>
+        </defs>
+    </svg>
 
-		<h2><i>3 melhores filmes</i></h2>
+    <div class="ethereal-bg"></div>
+    <div class="noise"></div>
 
-		<hr />
+    <header>
+        <h1>Multiverso Cine</h1>
+        <p>Os filmes e séries que expandiram minha mente. Uma seleção de dev.barion</p>
+    </header>
 
-		<!--  -->
+    <main class="movie-grid">
+        
+        <!-- Filme 1 -->
+        <article class="movie-card">
+            <img src="img/interestelar.png" alt="Pôster de Interstellar">
+            <div class="movie-info">
+                <h2>Interstellar</h2>
+                <span class="year">2014</span>
+                <p class="genre">Sci-Fi • Aventura</p>
+            </div>
+        </article>
 
-		<h3 id="filme1">1) O Candidato Honesto</h3>
+        <!-- Filme 2 -->
+        <article class="movie-card">
+            <img src="img/devoradores.png" alt="Pôster de Devoradores de Estrelas">
+            <div class="movie-info">
+                <h2>Devoradores de Estrelas</h2>
+                <span class="year">2026</span>
+                <p class="genre"> Ficção científica • Aventura</p>
+            </div>
+        </article>
 
-		<p>
-			João Ernesto (Leandro Hassum) é um político corrupto que, num belo dia,
-			leva um passe mágico e... não consegue mais mentir. Justo ele, que vivia
-			de papo furado! Imagina um político falando tudo o que pensa, sem filtro,
-			sem disfarce? O caos se instala, a mídia surta e o povo ri. Uma crítica
-			afiada, mas toda trabalhada no humor brasileiro raiz.
-		</p>
+        <!-- Filme 3 -->
+        <article class="movie-card">
+            <img src="img/astra.png" alt="Pôster de Ad Astra - Rumo às Estrelas">
+            <div class="movie-info">
+                <h2>Ad Astra - Rumo às Estrelas</h2>
+                <span class="year">2019</span>
+                <p class="genre"> Ficção científica • Aventura</p>
+            </div>
+        </article>
 
-		<div id="img1">
-			<img
-				src="img/candidato-honesto.jpg"
-				alt=""
-				width="600px"
-				style="border-radius: 30px"
-			/>
-		</div>
-		<br />
+		<!-- Filme 4 -->
+		<article class="movie-card">
+            <img src="img/almanaque.png" alt="Pôster Projeto Almanaque">
+            <div class="movie-info">
+                <h2>Projeto Almanaque</h2>
+                <span class="year">2015</span>
+                <p class="genre">Ficção científica • Thriller</p>
+            </div>
+        </article>
 
-		<hr />
+         <!-- Filme 5 -->
+         <article class="movie-card">
+            <img src="img/farofeiros.jpg" alt="Pôster de Os Farofeiros">
+            <div class="movie-info">
+                <h2>Os Farofeiros</h2>
+                <span class="year">2018</span>
+                <p class="genre">Comédia • Humor</p>
+            </div>
+        </article>
 
-		<!--  -->
+        <!-- Filme 6 -->
+        <article class="movie-card">
+            <img src="img/gente.jpg" alt="Pôster de Gente Grande">
+            <div class="movie-info">
+                <h2>Gente Grande</h2>
+                <span class="year">2010</span>
+                <p class="genre">Comédia • Drama</p>
+            </div>
+        </article>
 
-		<h3 id="filme2">2) Gente Grande</h3>
+		<!-- Filme 7 -->
+        <article class="movie-card">
+            <img src="img/cunhado.png" alt="Pôster Meu Cunhado é um Vampiro">
+            <div class="movie-info">
+                <h2>Meu Cunhado é um Vampiro</h2>
+                <span class="year">2023</span>
+                <p class="genre">Comédia • Terror</p>
+            </div>
+        </article>
 
-		<p>
-			Cinco amigos de infância se reencontram após a morte do técnico de
-			basquete deles. Eles decidem passar um fim de semana juntos, com suas
-			famílias, num lago onde passaram momentos épicos da juventude. O problema?
-			Eles cresceram... mas continuam umas crianças grandes.Brincadeiras bobas,
-			piadas de tiozão e nostalgia pura, mas com o carisma do Sandler e da turma
-			toda (Kevin James, Chris Rock, David Spade… só lenda).
-		</p>
+		<!-- Filme 8 -->
+        <article class="movie-card">
+            <img src="img/candidato.jpg" alt="Pôster de Candidato Honesto 2">
+            <div class="movie-info">
+                <h2>Candidato Honesto 2</h2>
+                <span class="year">2018</span>
+                <p class="genre">Comédia • Humor</p>
+            </div>
+        </article>
 
-		<div id="img2">
-			<img
-				src="img/gente-grande.jpg"
-				alt=""
-				width="600px"
-				style="border-radius: 30px"
-			/>
-		</div>
-		<br />
+    </main>
 
-		<hr />
+    <footer>
+        <p>Desenvolvido por Murilo Barion | 2026</p>
+    </footer>
 
-		<!--  -->
+	<script>
+        const hueElement = document.getElementById('hue-anim');
+        let currentHue = 0;
+        const speed = 0.8;
+        function animateShadow() {
+            currentHue = (currentHue + speed) % 360;
+            if (hueElement) {
+                hueElement.setAttribute('values', currentHue);
+            }
+            requestAnimationFrame(animateShadow);
+        }
+        animateShadow();
+    </script>
 
-		<h3 id="filme3">3) Os Farofeiros</h3>
-
-		<p>
-			Quatro colegas de trabalho são convencidos a alugar uma casa de praia para
-			passar o feriado de ano novo com suas famílias. A promessa era de um
-			paraíso, mas o que encontram é uma casa caindo aos pedaços, apertada e
-			cheia de perrengues. É a receita completa para o caos. Imagina a confusão:
-			engarrafamento na estrada, vizinhos barulhentos, comida estragando e uma
-			disputa acirrada por um lugar na areia. Uma comédia que explora as
-			situações clássicas e hilárias das férias em família que tinham tudo para
-			dar errado.
-		</p>
-
-		<div id="img3">
-			<img
-				src="img/farofeiros.jpg"
-				alt=""
-				width="600px"
-				style="border-radius: 30px"
-			/>
-		</div>
-
-		<div id="rodape">
-			<span>© 2025 Murilo Barion. Todos os direitos reservados.</span>
-		</div>
-
-		<!--  -->
-	</body>
+</body>
 </html>
