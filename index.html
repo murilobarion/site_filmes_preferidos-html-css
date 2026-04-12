@@ -74,7 +74,7 @@
 
          <!-- Filme 5 -->
          <article class="movie-card">
-            <img src="img/farofeiros.jpg" alt="Pôster de Os Farofeiros">
+            <img src="img/farofeitos.png" alt="Pôster de Os Farofeiros">
             <div class="movie-info">
                 <h2>Os Farofeiros</h2>
                 <span class="year">2018</span>
@@ -124,6 +124,7 @@
         const speed = 0.8;
         function animateShadow() {
             currentHue = (currentHue + speed) % 360;
+
             if (hueElement) {
                 hueElement.setAttribute('values', currentHue);
             }
