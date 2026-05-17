@@ -27,11 +27,11 @@
         h1 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
-            font-size: 4rem;
+            font-size: 6rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #fff, #888);
+            background: linear-gradient(#ffffff, #d61313);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -48,7 +48,7 @@
         .biblio {
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
@@ -145,7 +145,7 @@
             position: fixed;
             inset: -60px; 
             background-color: rgba(229, 9, 20, 0.3); 
-            filter: url(#ethereal-filter) blur(4px);
+            filter: url(#ethereal-filter);
             -webkit-mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
             mask-image: url('https://framerusercontent.com/images/ceBGguIpUU8luwByxuQz79t7To.png');
             -webkit-mask-size: cover;
