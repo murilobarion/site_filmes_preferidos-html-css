@@ -40,7 +40,7 @@
         header p {
             font-weight: 300;
             color: #aaa;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -183,7 +183,7 @@
             .movie-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 15px; 
-                padding: 10px 15px 60px;
+                padding: 10px 15px 60px;            
             }
             .movie-info {
                 padding: 12px;
@@ -195,3 +195,188 @@
                 font-size: 0.7rem; 
             }
         }
+
+.adorocinema-container {
+    max-width: 1320px;
+    margin: 50px auto;
+    padding: 50px; 
+    background: rgba(18, 20, 26, 0.85); 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6); 
+    border: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+    z-index: 10;
+}
+
+.voltar-link {
+    display: inline-block;
+    color: #888;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.voltar-link:hover {
+    color: var(--accent-color);
+    transform: translateX(-5px); 
+}
+
+.filme-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0 0 40px 0;
+    background: linear-gradient(45deg, #fff, #999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+}
+
+.info-layout {
+    display: flex;
+    gap: 50px; 
+    margin-bottom: 50px;
+}
+
+.poster-box img {
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+    transition: transform 0.4s ease;
+}
+
+.poster-box img:hover {
+    transform: scale(1.03); 
+}
+
+.dados-box {
+    flex: 1;
+}
+
+.meta-dados {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.meta-dados .destaque-cor {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.equipe-tecnica p {
+    margin-bottom: 12px;
+    color: #ccc;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.equipe-tecnica strong {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.caixa-notas {
+    margin-top: 40px;
+}
+
+.nota-card {
+    display: inline-block; 
+    background: linear-gradient(145deg, rgba(229, 9, 20, 0.05), rgba(0,0,0,0.3));
+    border: 1px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(229, 9, 20, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nota-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(229, 9, 20, 0.3); 
+}
+
+.nota-card .perfil {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.nota-card .valor {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.nota-card .estrelas {
+    color: #ffc107;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+.secao-bloco {
+    background: rgba(255,255,255,0.02);
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+.secao-titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--accent-color); 
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+.secao-conteudo {
+    color: #d5d5d5;
+    line-height: 1.8; 
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.video-box iframe {
+    border-radius: 12px;
+    border: none; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+
+    .adorocinema-container {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    .info-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    .filme-titulo {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .secao-titulo {
+        border-left: none;
+        border-bottom: 3px solid var(--accent-color);
+        padding-left: 0;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+}
