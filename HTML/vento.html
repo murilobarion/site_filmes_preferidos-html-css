@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interestelar - Multiverso Cine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    
+    <style>
+        .adorocinema-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .voltar-link {
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .voltar-link:hover {
+            color: var(--accent-color);
+        }
+
+        .filme-titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            margin: 15px 0;
+            color: #fff;
+        }
+
+        .abas-menu {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #222;
+            padding-bottom: 15px;
+        }
+
+        .aba-item {
+            background-color: #1a1d24;
+            color: #bbb;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .aba-item.ativa {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .info-layout {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .poster-box img {
+            width: 260px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+        }
+
+        .dados-box {
+            flex: 1;
+        }
+
+        .meta-dados {
+            font-size: 1.05rem;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .meta-dados .destaque-cor {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .equipe-tecnica p {
+            margin-bottom: 8px;
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        .equipe-tecnica strong {
+            color: #fff;
+        }
+
+        .caixa-notas {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .nota-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 12px;
+            min-width: 110px;
+            text-align: center;
+        }
+
+        .nota-card .perfil {
+            font-size: 0.75rem;
+            color: #888;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .nota-card .valor {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #fff;
+            margin: 2px 0;
+        }
+
+        .nota-card .estrelas {
+            color: #ffc107;
+            font-size: 0.75rem;
+        }
+
+        .secao-bloco {
+            margin-bottom: 35px;
+        }
+
+        .secao-titulo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 15px;
+            border-left: 4px solid #ffc107; 
+            padding-left: 10px;
+        }
+
+        .secao-conteudo {
+            color: #ddd;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .video-box iframe {
+            border-radius: 8px;
+            border: 1px solid #222;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .info-layout {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .filme-titulo {
+                font-size: 2.3rem;
+                text-align: center;
+            }
+            .caixa-notas {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ethereal-bg"></div>
+    <div class="noise"></div>
+
+    <div class="adorocinema-container">
+    <a href="index.html" class="voltar-link">⬅ Voltar para o Multiverso</a>
+    <h1 class="filme-titulo">O Menino que Descobriu o Vento</h1>
+
+    <div class="info-layout">
+        <div class="poster-box">
+            <img src="/img/vento.jpg" alt="Pôster de O Menino que Descobriu o Vento">
+        </div>
+
+        <div class="dados-box">
+            <p class="meta-dados">
+                1 de março de 2019 <span class="destaque-cor">No streaming</span> | 1h 53min | Drama, Biografia
+            </p>
+
+            <div class="equipe-tecnica">
+                <p><strong>Direção: </strong>Chiwetel Ejiofor</p>
+                <p><strong>Roteiro: </strong>Chiwetel Ejiofor</p>
+                <p><strong>Elenco: </strong>Maxwell Simba, Chiwetel Ejiofor, Aïssa Maïga</p>
+            </div>
+
+            <div class="caixa-notas">
+                <div class="nota-card" style="border-color: var(--accent-color); padding: 15px 30px;">
+                    <p class="perfil" style="color: var(--accent-color); font-size: 0.9rem;">AVALIAÇÃO OFICIAL</p>
+                    <p class="valor">4,6</p>
+                    <p class="estrelas" style="font-size: 1rem;">★★★★★</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="secao-bloco">
+        <h2 class="secao-titulo">Sinopse</h2>
+        <p class="secao-conteudo">
+            Baseado em uma inspiradora história real. O jovem William Kamkwamba, nascido no Malawi, se recusa a aceitar que sua vila seja destruída pela seca e pela fome. Usando apenas livros da biblioteca local e sucata encontrada no lixo, ele tenta construir um moinho de vento para gerar energia e bombear água, enfrentando a descrença de sua própria família e comunidade.
+        </p>
+    </div>
+
+    <div class="secao-bloco">
+        <h2 class="secao-titulo">Trailer Oficial</h2>
+        <div class="video-box">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/Dj1QVBLxyNs?si=1pCC07qzpU05hJCY" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
