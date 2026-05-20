@@ -31,7 +31,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
-            background: linear-gradient(#ffffff, #d61313);
+            background: linear-gradient(to right, #ff0000, #ffee00);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -48,7 +48,7 @@
         .biblio {
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 2.5rem;
+            font-size: 2.7rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 10px;
